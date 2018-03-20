@@ -1,0 +1,41 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Nothing yet",
+  "main": "gulp.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "browser-sync": "^2.23.6",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-cssbeautify": "^1.0.0",
+    "http": "0.0.0",
+    "multer": "^1.3.0",
+    "path": "^0.12.7",
+    "slug": "^0.9.1"
+  },
+  "devDependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "None"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niyorn/cssttr.git"
+  },
+  "keywords": [
+    "Hogeschool",
+    "van",
+    "Amsterdam"
+  ],
+  "author": "Chanakarn Niyornram",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/niyorn/cssttr/issues"
+  },
+  "homepage": "https://github.com/niyorn/cssttr#readme"
+}
