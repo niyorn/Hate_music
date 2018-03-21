@@ -1,6 +1,6 @@
 :root{
-    --primary-color: blue;
-    --secondary-color: red;
+    --primary-color: #FF8A65;
+    --secondary-color: white;
     --material-shaduw-1: 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     --material-shaudw-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     --material-shaduw-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -13,31 +13,90 @@
     box-sizing: border-box;
 }
 
-head{
-    height: 100vh;
-    width: 100vw;
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
     background-color: blue;
     position: relative;
+    padding-top: 4em;
+}
+
+header nav{
+    position: fixed;
+    top: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    z-index: 100;
+    height: 4em;
+    width: 100%;
+    box-shadow: var(--material-shaduw-1);
 }
 
 .jumbotron{
     height: 100vh;
     width: 100%;
     background-color: red;
+    position: relative;
+    color: white;
+}
+
+.jumbotron video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jumbotron div{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.jumbotron a{
+    color: var(--primary-color);
+    padding: 0.6rem;
+    font-size: 2em;
+    background-color: transparent;
+    border: solid 0.7rem var(--primary-color);
+    margin-top: 4rem;
+    transition: all 0.4s;
+}
+.jumbotron a:hover, .jumbotron a:focus{
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.jumbotron p{
+    display: flex;
+    font-size: 14vw;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 4rem;
+    text-align: center;
+}
+@media (min-width: 34em){
+    .jumbotron p{
+        font-size: 10vw;
+    }
+}
+@media (min-width: 50em){
+    .jumbotron p{
+        font-size: 7vw;
+    }
 }
 
 header a {
     text-decoration: none
 }
 
-header nav{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: khaki;
-    display: flex;
-    width: 100%;
-}
 
 header nav ul{
     display: flex;
@@ -56,4 +115,84 @@ header nav ul li:nth-last-of-type(2){
 header nav a{
     padding: 1.4rem;
     display: flex;
+}
+
+
+/******************Main**************/
+main{
+    height: 100vh;
+    background-color: rgb(228, 228, 228);
+}
+
+.explaining{
+    display: grid;
+    box-shadow: var(--material-shaduw-1)
+}
+@media (min-width: 40em){
+    .explaining{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'illustration explaining';
+        max-height: 120em;
+        height: 95vh;
+        position: relative;
+    }
+}
+
+.explaining .illustration-container{
+    height: 30em;
+}
+@media (min-width: 40em){
+    .explaining .illustration-container{
+        height: 100%;
+        grid-area: illustration;
+    }
+    .explaining:nth-of-type(even) .illustration-container{
+        grid-area: explaining;
+    }
+}
+.explaining .illustration-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explaining .explaining-text{
+    padding: 2rem;
+    background-color: #fff;
+}
+@media (min-width: 40em){
+    .explaining .explaining-text{
+        grid-area: explaining;
+        padding: 5rem;
+    }
+
+    .explaining:nth-of-type(even) .explaining-text{
+        grid-area: illustration;
+    }
+}
+
+.explaining .explaining-text h2{
+    font-size: 10vw;
+    margin-bottom: 1.4rem;
+    color: var(--primary-color);
+}
+@media (min-width: 40em){
+    .explaining .explaining-text h2{
+        font-size: 7em;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.explaining .explaining-text p{
+    font-size: 4vw;
+}
+@media (min-width: 40em){
+    .explaining .explaining-text p{
+        font-size: 2em;
+        position: sticky;
+        bottom: 0;
+        z-index: 1;
+    }
 }

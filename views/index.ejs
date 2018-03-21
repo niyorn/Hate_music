@@ -1,22 +1,64 @@
-<%include head.ejs %>
-<header>
-    <section class="jumbotron">
-        <p>
-            Find love with the music you both hate!
-        </p>
-        <a href="">Register now</a>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Register</a></li>
-            <li><a href="">Login</a></li>
-        </ul>
-    </nav>
-</header>
+<%include partials/head.ejs %>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Register</a>
+                </li>
+                <li>
+                    <a href="">Login</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="jumbotron">
+            <!--source: https://www.youtube.com/watch?v=oT5qeQft5CE -->
+            <video src="assets/love-intro.mp4" autoplay muted loop></video>
+            <div>
+                <p>
+                    Find love with the music you both hate!
+                </p>
+                <a href="">Register now</a>
+            </div>
+        </section>
+    </header>
 
-<main>
+    <main>
+        <section class="explaining">
+            <div class="illustration-container">
+                <img src="http://www.simplyspeeddating.com.au/wp-content/uploads/2016/08/Couple.jpg" alt="">
+            </div>
+            <div class="explaining-text">
+                <h2>How it works</h2>
+                <p>Just fill in the music that you hate and our complex algorithm will handle the rest. You'll match with the
+                    person who also the same music genre</p>
+            </div>
+        </section>
+        <section class="explaining">
+            <div class="illustration-container">
+                <img src="http://www.simplyspeeddating.com.au/wp-content/uploads/2016/08/Couple.jpg" alt="">
+            </div>
+            <div class="explaining-text">
+                <h2>Safe</h2>
+                <p>Your ultimate goal in using Parship is to find someone who is right for you. That's why Parship - with the
+                    help of the Parship test - only links you to people whose profiles are compatible with yours. Vitally,
+                    as a service that protects your anonymity online, we also put you in control as you get to know other
+                    members. </p>
+            </div>
+        </section>
 
-</main>
+        <section class="explaining">
+            <div class="illustration-container">
+                <img src="http://www.simplyspeeddating.com.au/wp-content/uploads/2016/08/Couple.jpg" alt="">
+            </div>
+            <div class="explaining-text">
+                <h2>Your data</h2>
+                <p>Your date will be professional handled. Also when you've found a partner and don't want to use this application
+                    anymore, with the delete function your date will be removed from database.</p>
+            </div>
+        </section>
+    </main>
 
-<%include tail.ejs %>
+    <%include partials/tail.ejs %>
