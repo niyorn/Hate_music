@@ -20,13 +20,16 @@
     res.render('register2')
   })
   
-  // define the about route
   router.get('/user', function (req, res) {
     res.redirect('/user/homepage')
   })
 
   router.get('/user/homepage', function(req,res){
     res.render('user/index')
+  })
+
+  router.get('/user/chat', function(req, res){
+    res.render('user/chat')
   })
 
 

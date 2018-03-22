@@ -363,6 +363,7 @@ main{
     flex-wrap: wrap;
     color: black;
     justify-content: space-evenly;
+    animation: fade-in 1s;
 }
 
 .user .match-container .match{
@@ -403,4 +404,58 @@ main{
 .user .match-container .match a{
     text-decoration: none;
     color: black;
+}
+
+/*
+////////////////////////////////
+    User chat page
+///////////////////////////////
+*/
+
+.chat-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-container{
+    max-width: 40em;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    animation: fade-in 1s;
+}
+
+.chat-container ol{
+    list-style-type: none;
+}
+
+.chat-container ol li{
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
+
+.chat-container  p{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: white;
+}
+
+.chat-container footer p{
+    background-color: transparent;
+    padding: 0;
+    opacity: 0.8;
+    font-size: 1em;
+    color: black;
+}
+
+.chat-container textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.chat-container button[type=submit]{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4em;
 }
