@@ -13,12 +13,20 @@
   })
 
   router.get('/register', function(req, res){
-    console.log('hello')
     res.render('register')
   })
+
+  router.get('/register2', function(req, res){
+    res.render('register2')
+  })
+  
   // define the about route
-  router.get('/about', function (req, res) {
-    res.send('About birds')
+  router.get('/user', function (req, res) {
+    res.redirect('/user/homepage')
+  })
+
+  router.get('/user/homepage', function(req,res){
+    res.render('user/index')
   })
 
 

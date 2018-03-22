@@ -1,0 +1,27 @@
+<% include partials/head.ejs %>
+    <main class="register">
+        <div class="user-form">
+            <div>
+                <h2>Fill in your user information</h2>
+                <form action="user-homepage.html" method="get">
+                    <label for="field-email">First name</label>
+                    <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
+
+                    <label for="field-email">Last name</label>
+                    <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
+
+                    <label for="field-email">Birthday</label>
+                    <input type="date" id="field-email" name="field-email" autocomplete="email" required autofocus>
+
+                    <label for="field-email">Email</label>
+                    <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
+
+                    <label for="field-password">Password</label>
+                    <input type="password" id="field-password" name="field-password" required>
+                    
+                    <a class="button" href="/user">Finish</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <% include partials/tail.ejs %>

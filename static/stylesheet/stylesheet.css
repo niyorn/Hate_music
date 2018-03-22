@@ -214,12 +214,12 @@ main{
     flex-wrap: wrap;
     max-width: 34em;
     margin: 1rem;
-    animation: 0.7s fade-in;
+    animation: 1s fade-in;
 }
 @keyframes fade-in{
     from{
         opacity: 0;
-        transform: translateY(10em)
+        transform: translateY(4em)
     }
 
     to{
@@ -301,4 +301,52 @@ main{
 .button:hover, .button:focus{
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+.user-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.user-form div {
+    max-width: 30em;
+    box-shadow: var(--material-shaduw-2);
+    animation: fade-in 1s;
+}
+
+.user-form h2{
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 1.4rem;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.user-form form{
+    background-color: var(--primary-color);
+    padding: 0.7rem;
+}
+
+.user-form form label{
+    display: flex;
+}
+
+.user-form form input{
+    border: none;
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.user-form form .button{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
 }
