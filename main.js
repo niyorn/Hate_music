@@ -19,7 +19,8 @@ app
 
 
 // Tell express to use this router
-app.use('/', router)    
+app.use('/', router)
+// app.use('/register.html', router)    
 
 app.listen(4000, function () {
     console.log('Lets go baby!');
