@@ -3,23 +3,18 @@
         <div class="user-form">
             <div>
                 <h2>Fill in your user information</h2>
-                <form action="user-homepage.html" method="get">
-                    <label for="field-email">First name</label>
-                    <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
-
-                    <label for="field-email">Last name</label>
-                    <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
-
-                    <label for="field-email">Birthday</label>
-                    <input type="date" id="field-email" name="field-email" autocomplete="email" required autofocus>
-
-                    <label for="field-email">Email</label>
-                    <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
-
-                    <label for="field-password">Password</label>
-                    <input type="password" id="field-password" name="field-password" required>
-                    
-                    <a class="button" href="/user">Finish</a>
+                <form action="registeren" method="post">
+                    <label for="naam">Naam*</label>
+                    <input id="naam" name="naam" type="text" placeholder="Naam" required="">
+                    <label for="achternaam">Achternaam*</label>
+                    <input id="achternaam" name='achternaam' type="text" placeholder="Achternaam" required="">
+                    <label for="geboorte_datum">Geboortedatum*</label>
+                    <input id="geboorte_datum" name='geboorte_datum' type="date" placeholder="Geboorte datum" required="">
+                    <label for="email">Email*</label>
+                    <input id="email" name='email' type="email" placeholder="Email" required="">
+                    <label for="wachtwoord">Wachtwoord*</label>
+                    <input id="wachtwoord" name='wachtwoord' type="password" placeholder="Wachtwoord" pattern=".{3,}" required="">
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
