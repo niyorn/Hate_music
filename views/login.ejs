@@ -1,5 +1,17 @@
 <%include partials/head.ejs %>
-<%include partials/nav_non_member.ejs %>
-
+    <main class="login">
+        <div class="user-form">
+            <div>
+                <h2>Login now</h2>
+                <form action="/login" method="post">
+                    <label for="email">Email*</label>
+                    <input id="email" name='email' type="email" placeholder="Email" required="">
+                    <label for="password">Password*</label>
+                    <input id="password" name='password' type="password" placeholder="Password" pattern=".{3,}" required="">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
 
 <%include partials/tail.ejs %>

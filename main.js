@@ -11,6 +11,7 @@ var multer = require('multer'),
 var router = require('./route/routing')
 var mysql = require('mysql')
 var myConnection = require('express-myconnection')
+var session = require('express-session')
 var port = 4000;
 
 //upload file location
@@ -33,6 +34,11 @@ app
     .use(myConnection(mysql, dbOptions, 'single'))
     .use(bodyParser.json())
     .use(bodyParser.urlencoded({extended: true}))
+    .use(session({
+        secret: "YourSuperSecretStringWithStrangeCharacters#@$!",
+        resave: false,
+        saveUninitialized: true
+      }));
 
 
 

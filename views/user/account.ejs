@@ -1,13 +1,12 @@
-<% include partials/head.ejs %>
+<%include ../partials/head.ejs %>
+<%include ../partials/nav_member.ejs %>
 
-    <div>
-        <p><%=error%></p>
-    </div>
-
-    <main class="register">
+<main class="user">
+    <main class="user-account">
         <div class="user-form">
             <div>
-                <h2>Fill in your user information</h2>
+                <h2>Your information</h2>
+                <% console.log(data) %>
                 <form action="registeren" method="post">
                     <label for="naam">First name*</label>
                     <input id="naam" name="firstName" type="text" placeholder="First name" required="">
@@ -19,9 +18,11 @@
                     <input id="email" name='email' type="email" placeholder="Email" required="">
                     <label for="password">Password*</label>
                     <input id="password" name='password' type="password" placeholder="Password" pattern=".{3,}" required="">
-                    <button type="submit">Submit</button>
+                    <button type="submit">Change</button>
                 </form>
             </div>
         </div>
     </main>
-    <% include partials/tail.ejs %>
+</main>
+
+<%include ../partials/tail.ejs %>

@@ -311,6 +311,7 @@ main{
 }
 
 .user-form div {
+    width: 100%;
     max-width: 30em;
     box-shadow: var(--material-shaduw-2);
     animation: fade-in 1s;
@@ -357,6 +358,13 @@ main{
     User
 //////////////////////////////////
 */
+
+.user h1{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 4em;
+    text-align: center;
+}
 
 .user .match-container{
     display: flex;
@@ -405,6 +413,17 @@ main{
     text-decoration: none;
     color: black;
 }
+
+/*
+////////////////////////////////
+    User account
+///////////////////////////////
+*/
+
+.user-account .user-form div{
+    width: 100%;
+}
+
 
 /*
 ////////////////////////////////
