@@ -6,18 +6,15 @@
         <div class="user-form">
             <div>
                 <h2>Your information</h2>
-                <% console.log(data) %>
-                <form action="registeren" method="post">
+                <form action="/user" method="post">
                     <label for="naam">First name*</label>
-                    <input id="naam" name="firstName" type="text" placeholder="First name" required="">
+                    <input id="naam" name="firstName" type="text" placeholder="First name" required="" value="<%= user.voornaam %>">
                     <label for="achternaam">Last name*</label>
-                    <input id="achternaam" name='lastName' type="text" placeholder="Last name" required="">
-                    <label for="geboorte_datum">Birthday*</label>
-                    <input id="geboorte_datum" name='birthday' type="date" placeholder="Birthday" required="">
+                    <input id="achternaam" name='lastName' type="text" placeholder="Last name" required="" value="<%= user.achternaam %>">
                     <label for="email">Email*</label>
-                    <input id="email" name='email' type="email" placeholder="Email" required="">
+                    <input id="email" name='email' type="email" placeholder="Email" required="" value="<%= user.email %>">
                     <label for="password">Password*</label>
-                    <input id="password" name='password' type="password" placeholder="Password" pattern=".{3,}" required="">
+                    <input id="password" name='password' type="password" placeholder="Password" pattern=".{3,}" required="" value="<%= user.wachtwoord %>">
                     <button type="submit">Change</button>
                 </form>
             </div>
